@@ -60,7 +60,7 @@ public class TASK_2 {
         }
         logger.addHandler(fileHandler);
         String path = "output.txt";
-        try (FileWriter fWriter = new FileWriter(path, false)) {
+        try (FileWriter fWriter = new FileWriter(path, true)) {
             fWriter.append(args);
             fWriter.append("\n");
             fWriter.flush();
