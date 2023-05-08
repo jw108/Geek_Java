@@ -8,7 +8,7 @@ import java.util.logging.*;
 
 public class TASK_2 {
     public static void main(String[] args) throws Exception {
-        String [] arrayData =  ReadLineFromFile("dataForTask3.txt");
+        String [] arrayData =  ReadLineFromFile("HomeWork/SEMINAR_2/dataForTask2.txt");
         for(int i = 0; i < arrayData.length; i++) {
             System.out.println(PrintLine(arrayData[i]));
             saveToFile(PrintLine(arrayData[i]).toString());
@@ -54,12 +54,12 @@ public class TASK_2 {
         Logger logger = Logger.getAnonymousLogger();
         FileHandler fileHandler = null;
         try {
-            fileHandler = new FileHandler("log.txt", true);
+            fileHandler = new FileHandler("HomeWork/SEMINAR_2/log.txt", true);
         } catch (IOException e) {
             e.printStackTrace();
         }
         logger.addHandler(fileHandler);
-        String path = "output.txt";
+        String path = "HomeWork/SEMINAR_2/output.txt";
         try (FileWriter fWriter = new FileWriter(path, true)) {
             fWriter.append(args);
             fWriter.append("\n");
