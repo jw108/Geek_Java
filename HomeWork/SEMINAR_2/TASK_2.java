@@ -1,7 +1,6 @@
 package HomeWork.SEMINAR_2;
 
 import java.io.*;
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.logging.*;
